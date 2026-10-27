@@ -1,16 +1,65 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# WeatherSpace 🌤️
 
-Currently, two official plugins are available:
+A responsive weather application built with React and Tailwind CSS. Search for cities and view current weather conditions using the OpenWeather API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Get weather for your current location.
+- Search for cities by name.
+- View temperature and feels-like temperature.
+- Check humidity, wind speed, cloud coverage, and pressure.
+- Responsive interface with an Aurora-inspired design.
+- Loading and error states for API requests.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- Axios
+- OpenWeather API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/krunal0234/Weather-app.git
+cd Weather-app
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure the API key
+
+Create a `.env` file in the project root:
+
+```env
+VITE_Api_key=your_openweather_api_key
+```
+
+Replace the placeholder with your OpenWeather API key.
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## Notes
+
+- Location access requires browser permission.
+- The app uses the OpenWeather API for city search and current weather.
+- Never commit your `.env` file or expose credentials in your repository.
+
+## Author
+
+Krunal Ramteke
